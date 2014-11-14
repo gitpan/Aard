@@ -1,5 +1,5 @@
-Aard version 0.000_001
-======================
+Aard version 0.001
+==================
 
 Aard is a module for reading files in the Aard Dictionary format (.aar). A dictionary is an array of (key, article) pairs, with some associated metadata.
 
@@ -16,7 +16,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-* JSON
+* JSON::MaybeXS
 * UUID::Tiny
 
 COPYRIGHT AND LICENCE

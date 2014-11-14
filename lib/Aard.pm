@@ -3,13 +3,13 @@ package Aard;
 use 5.014000;
 use strict;
 use warnings;
-our $VERSION = '0.000_001';
+our $VERSION = '0.001';
 
 use IO::Uncompress::Inflate qw/inflate/;
 use IO::Uncompress::Bunzip2 qw/bunzip2/;
 use List::Util qw/sum/;
 
-use JSON qw/decode_json/;
+use JSON::MaybeXS qw/decode_json/;
 use UUID::Tiny qw/uuid_to_string/;
 
 use constant HEADER_SPEC => [
@@ -195,19 +195,35 @@ Returns true if B<article_count> means number of articles in this volume. This i
 
 =item B<index_language>
 
+Returns the dictionary's "from" language (two or three letter ISO code)
+
 =item B<article_language>
+
+Returns the dictionary's "to" language (two or three letter ISO code)
 
 =item B<title>
 
+Returns the dictionary title
+
 =item B<version>
+
+Returns the dictionary version
 
 =item B<description>
 
+Returns the dictionary description
+
 =item B<copyright>
+
+Returns the copyright notice
 
 =item B<license>
 
+Returns the full license text
+
 =item B<source>
+
+Returns the dictionary data source
 
 =back
 

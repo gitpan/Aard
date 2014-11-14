@@ -14,7 +14,7 @@ WriteMakefile(
 		   IO::Uncompress::Bunzip2 0
 		   List::Util 0
 
-		   JSON 0
+		   JSON::MaybeXS 0
 		   UUID::Tiny 0/,
 	},
 	META_MERGE        => {
